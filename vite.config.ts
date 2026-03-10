@@ -7,6 +7,10 @@ import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Tarot-reading/',
+  build: {
+    sourcemap: false // disable source map
+  },
   plugins: [
     vue(),
     vueDevTools(),
